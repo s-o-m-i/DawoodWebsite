@@ -1,0 +1,82 @@
+.home-bg {
+  background-image: url(/public/home-bgOne.jpg);
+  background-repeat: no-repeat;
+  /* object-fit: cover; */
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+
+}
+.our-services {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(40deg, #ea623d 0%, #1c80c5 100%);
+}
+.custom-dot-list-style {
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-item-padding-40-px {
+  padding: 0 20px;
+}
+
+
+.container {
+  position: relative;
+  width: 280px;
+  height: 250px;
+  perspective: 900px; /* Add perspective to the container */
+border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all .5s ease;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.firstCard, .backCard {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+}
+
+.firstCard {
+  /* front face styles, if any */
+}
+
+.backCard {
+  transform: rotateY(180deg); /* Rotate the back card */
+  /* back face styles, if any */
+  background-color: #FF6058;
+  border-radius: 10px;
+}
+.active{
+  color: #FF5E29;
+
+}
+
+.learn{
+  color: #17478E;
+}
